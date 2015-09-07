@@ -6,7 +6,9 @@ description 'Installs openssh'
 version '1.5.2'
 
 recipe 'openssh', 'Installs openssh'
+=begin
 recipe 'openssh::iptables', 'Set up iptables to allow SSH inbound'
+=end
 
 supports 'arch'
 supports 'centos'
@@ -19,4 +21,6 @@ supports 'smartos'
 supports 'suse'
 supports 'ubuntu'
 
+=begin
 depends 'iptables'
+=end
